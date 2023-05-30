@@ -18,7 +18,7 @@ if file was edited from another program in that case you might want to use clipb
 
 clipboard mode:
 in this mode copy the text you want completion for then press shift+ctrl to get completion if autopaste in .env file is set to true
-then the completion will get pasted at your cursor onto whatever field its on if not you will hear a beep indicating that your completion is ready
+then the completion will get pasted at your cursor onto whatever field its on if not you will hear a beep indicating that your completion is ready then just press ctrl+v to paste it whereever you want
 
 how to use:
 clone the repo , install the requirements using pip, edit the .env file to your needs then run the script
