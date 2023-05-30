@@ -19,5 +19,5 @@ in this mode copy the text you want completion for then press shift+ctrl to get 
 then the completion will get pasted at your cursor onto whatever field its on if not you will hear a beep indicating that your completion is ready
 
 how to use:
-install the requirements using pip then run the script
+install the requirements using pip edit the .env file to your needs then run the script
 tested on windows for linux you might have to run the script as admin
