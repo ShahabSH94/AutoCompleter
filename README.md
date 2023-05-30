@@ -10,6 +10,7 @@ then on wherever you want completion just put the symbol(default=$$) on there th
 def helloworld()
     print$$
 then press shift+ctrl hopefully you will get something like ("Hello, world!") then remove the symbol if you dont want any more completions on that line
+
 if you didnt like what you got just ctrl+z to undo
 
 some programs lock the file while the file is opened in that program so currently they're not supported also some other programs might not support undo
