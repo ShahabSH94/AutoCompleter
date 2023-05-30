@@ -13,7 +13,7 @@ then press shift+ctrl hopefully you will get something like ("Hello, world!") th
 
 if you didnt like what you got just ctrl+z to undo
 
-some programs lock the file while the file is opened in that program so currently they're not supported also some other programs might not support undo
+some programs lock the file while the file is opened in that program so currently they're not supported in this mode also some other programs might not support undo
 if file was edited from another program in that case you might want to use clipboard mode
 
 clipboard mode:
