@@ -56,6 +56,7 @@ llm = Llama(model_path=modelpath,n_ctx=CTX_MAX,n_threads=n_threads)
 promptslice = int(CTX_MAX - CTX_MAX/3)
 if usrselection == "1":
     file = documentpath
+print("waiting for key press")
 def GetCompleterResponse(prompt:str):
     output = llm(prompt=prompt,temperature=temperature,repeat_penalty=repeat_penalty,max_tokens=maxtokens)
     return output['choices'][0]['text'].strip()#,top_p=top_p,top_k=top_k)
@@ -96,7 +97,7 @@ def get_prediction():
             keyboard.press_and_release("ctrl+v")
         else:
             winsound.Beep(450, 200)
-    print("Done")
+    print("auto-completion was successful")
 
 keyboard.add_hotkey('shift+ctrl', get_prediction)
 keyboard.wait()
