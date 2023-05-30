@@ -2,7 +2,7 @@
  Auto Complete anything with a ggml model
  
  
-a simple script that lets you auto-complete anything anywhere
+a simple script that lets you auto-complete anything anywhere using your favorite ggml model
 
 symbol document mode:
 in this mode enter the absolute path to your document for example C:\Users\file.txt in .env file
