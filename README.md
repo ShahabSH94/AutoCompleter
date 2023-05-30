@@ -23,4 +23,5 @@ then the completion will get pasted at your cursor onto whatever field its on if
 how to use:
 clone the repo , install the requirements using pip, edit the .env file to your needs then run the script
 tested on windows for linux you might have to run the script as admin
+
 if you dont have a ggml model get one from here https://huggingface.co/TheBloke
