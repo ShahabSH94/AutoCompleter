@@ -1,5 +1,5 @@
 # AutoCompleter
- Auto Complete anything with a ggml model
+ Auto Complete anything using a ggml model
  
  
 a simple script that lets you auto-complete anything anywhere using your favorite ggml model
