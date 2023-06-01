@@ -12,6 +12,8 @@ example for prompt generation in Stable Diffusion web UI in clipboard mode:
 
 the example prompt is based on this: https://civitai.com/images/882671?modelVersionId=78164&prioritizedUserIds=53515&period=AllTime&sort=Most+Reactions&limit=20
 
+the model that was used for fastest inference and decent quality (q4_0): https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GGML
+
 symbol document mode:
 in this mode enter the absolute path to your document for example C:\Users\file.txt in .env file
 then on wherever you want completion just put the symbol(default=$$) on there then for example:
