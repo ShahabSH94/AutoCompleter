@@ -4,6 +4,9 @@
  
 a simple script that lets you auto-complete anything anywhere using your favorite ggml model
 
+example for prompt generation:
+https://github.com/ShahabSH94/AutoCompleter/assets/121495598/e7c22714-deea-43ba-a5f7-7b781ed4c5d7
+
 symbol document mode:
 in this mode enter the absolute path to your document for example C:\Users\file.txt in .env file
 then on wherever you want completion just put the symbol(default=$$) on there then for example:
@@ -25,3 +28,6 @@ clone the repo , install the requirements using pip, edit the .env file to your 
 tested on windows for linux you might have to run the script as admin
 
 if you dont have a ggml model get one from here https://huggingface.co/TheBloke
+
+
+
