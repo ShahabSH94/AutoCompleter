@@ -4,8 +4,13 @@
  
 a simple script that lets you auto-complete anything anywhere using your favorite ggml model
 
-example for prompt generation:
-https://github.com/ShahabSH94/AutoCompleter/assets/121495598/e7c22714-deea-43ba-a5f7-7b781ed4c5d7
+example for prompt generation in Stable Diffusion web UI in clipboard mode:
+
+
+
+![ezgif-4-57adb8e040](https://github.com/ShahabSH94/AutoCompleter/assets/121495598/da8d9e62-3f5f-40e7-9ff1-c3d504f771b6)
+
+the example prompt is based on this: https://civitai.com/images/882671?modelVersionId=78164&prioritizedUserIds=53515&period=AllTime&sort=Most+Reactions&limit=20
 
 symbol document mode:
 in this mode enter the absolute path to your document for example C:\Users\file.txt in .env file
