@@ -35,4 +35,6 @@ tested on windows for linux you might have to run the script as admin
 if you dont have a ggml model get one from here https://huggingface.co/TheBloke
 
 
-
+Credits:
+https://github.com/ggerganov/llama.cpp
+https://github.com/abetlen/llama-cpp-python
