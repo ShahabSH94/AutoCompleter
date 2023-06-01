@@ -36,5 +36,7 @@ if you dont have a ggml model get one from here https://huggingface.co/TheBloke
 
 
 Credits:
+
 https://github.com/ggerganov/llama.cpp
+
 https://github.com/abetlen/llama-cpp-python
