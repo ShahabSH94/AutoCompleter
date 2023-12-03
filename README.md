@@ -1,40 +1,45 @@
 # AutoCompleter
- Auto Complete anything using a ggml model
+ Auto Complete anything using a gguf model
  
  
-a simple script that lets you auto-complete anything anywhere using your favorite ggml model
+a simple script that lets you auto-complete anything anywhere using your favorite gguf model
 
-example for prompt generation in Stable Diffusion web UI in clipboard mode:
+New Changes:
+-you can now get completion token by token  instead of waiting for it to finish
+-folder mode , now you can specify a folder and filetypes and you can use the symbol on files inside the folder(only one symbol at at a time)
+
+example for code completion in vscode:
 
 
-
-![ezgif-4-57adb8e040](https://github.com/ShahabSH94/AutoCompleter/assets/121495598/da8d9e62-3f5f-40e7-9ff1-c3d504f771b6)
-
-the example prompt is based on this: https://civitai.com/images/882671?modelVersionId=78164&prioritizedUserIds=53515&period=AllTime&sort=Most+Reactions&limit=20
-
-the model that was used for fastest inference and decent quality (q4_0): https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GGML
 
 symbol document mode:
 in this mode enter the absolute path to your document for example C:\Users\file.txt in .env file
 then on wherever you want completion just put the symbol(default=$$) on there then for example:
 def helloworld()
     print$$
-then press shift+ctrl hopefully you will get something like ("Hello, world!") then remove the symbol if you dont want any more completions on that line
+then press shift+ctrl hopefully you will get something like 
+def helloworld()
+    print("Hello, world!")
 
-if you didnt like what you got just ctrl+z to undo
 
-some programs lock the file while the file is opened in that program so currently they're not supported in this mode also some other programs might not support undo
-if file was edited from another program in that case you might want to use clipboard mode
+
+folder symbol mode:
+set a folder in .env and specify file types program will scan all those files and and you will get predictions on the file where the symbol is.
+
+some programs lock the file while the file is opened in that program so currently they're not supported in these mode
+if file is locked from another program in that case you might want to use clipboard mode.
+
 
 clipboard mode:
-in this mode copy the text you want completion for then press shift+ctrl to get completion if autopaste in .env file is set to true
-then the completion will get pasted at your cursor onto whatever field its on if not you will hear a beep indicating that your completion is ready then just press ctrl+v to paste it whereever you want.
+in this mode copy the text you want completion for then press shift+ctrl to get completion then the completion will get pasted at your cursor onto whatever field its on
+
+-you can press shift+ctrl again in any mode to stop the completion while its happening
 
 how to use:
 clone the repo , install the requirements using pip, edit the .env file to your needs then run the script
 tested on windows for linux you might have to run the script as sudo
 
-if you dont have a ggml model get one from here https://huggingface.co/TheBloke
+if you dont have a gguf model get one from here https://huggingface.co/TheBloke
 
 
 Credits:
