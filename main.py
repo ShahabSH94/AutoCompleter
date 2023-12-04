@@ -56,7 +56,7 @@ class Completer():
                 else:
                     print("no doc_folder set in .env")
             if symbolcount == 1 or usrselection == "3":
-                prompt = slicePromptIfExceedsWarningCtx(symbol,usrselection,doc,self.promptslice,self.warningCtx,self.CTX_MAX)
+                prompt = slicePromptIfExceedsWarningCtx(symbol,usrselection,doc,self.promptslice,self.CTX_MAX)
                 response = self.GetCompleterResponse(prompt)
                 new_content = ''
                 splitdoc = doc.split(symbol)
@@ -73,7 +73,7 @@ class Completer():
 
         else:
             clipboard_data = paste()
-            prompt = slicePromptIfExceedsWarningCtx(symbol,usrselection,clipboard_data,self.promptslice,self.warningCtx,self.CTX_MAX)
+            prompt = slicePromptIfExceedsWarningCtx(symbol,usrselection,clipboard_data,self.promptslice,self.CTX_MAX)
             response = self.GetCompleterResponse(prompt)
             completion = ''
             for i in response:
