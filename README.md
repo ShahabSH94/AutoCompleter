@@ -5,11 +5,16 @@
 a simple script that lets you auto-complete anything anywhere using your favorite gguf model
 
 New Changes:
+
+
 -you can now get completion token by token  instead of waiting for it to finish
+
 -folder mode , now you can specify a folder and filetypes and you can use the symbol on files inside the folder(only one symbol at at a time)
 
 example for code completion in vscode:
 
+
+![ezgif-4-57adb8e040](https://github.com/ShahabSH94/AutoCompleter/blob/c03688b8caf3eab6d4eca1668264c3b2b521c19d/example.gif)
 
 
 symbol document mode:
