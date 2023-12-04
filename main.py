@@ -23,8 +23,8 @@ class Completer():
         self.temperature = float(env_vars['temperature'])
         self.repeat_penalty=float(env_vars['repeat_penalty'])
         self.llm = Llama(model_path=self.modelpath,n_ctx=self.CTX_MAX,n_threads=self.n_threads)  if self.modelpath != '' else print("no model set in .env")
-        self.promptslice = self.CTX_MAX//3
         self.warningCtx = self.CTX_MAX // 30
+        self.promptslice = self.CTX_MAX- self.warningCtx
         self.stop = False
     def GetCompleterResponse(self,prompt:str):
         output = self.llm(stream=True,prompt=prompt,temperature=self.temperature,repeat_penalty=self.repeat_penalty,max_tokens=self.maxtokens)
